@@ -1,16 +1,16 @@
 version: "2"
 services:
-  app:
-    container_name: chatbot
-    restart: always
-    build: .
-    ports:
-      - "3000:3000"
-    links:
-      - mongodb
-    environment:
-      - DEBUG=VNTK.*
-      - BD_HOST=mongodb
+  # app:
+  #   container_name: chatbot
+  #   restart: always
+  #   build: .
+  #   ports:
+  #     - "3000:3000"
+  #   links:
+  #     - mongodb
+  #   environment:
+  #     - DEBUG=VNTK.*
+  #     - BD_HOST=mongodb
 
   mongodb:
     container_name: mongodb
